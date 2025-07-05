@@ -48,7 +48,7 @@
         - "Bachelor Thesis: Identity-based Cryptography from Affine MACs"
 
 - title: Reserach interests
-  type: list
+  type: list_groups
   contents:
     - Topic 1.
     - Topic 2.
