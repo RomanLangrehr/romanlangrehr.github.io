@@ -20,7 +20,7 @@
       "startDate": "2020-02-01",
       "endDate": "2025-06-01",
       "highlights": ["Supervisor: Dennis Hofheinz", "PhD Thesis: Non-interactive key exchange for many users"]
-    }
+    },
     {
       "institution": "KIT",
       "location": "Karlsruhe, Germany",
@@ -28,7 +28,7 @@
       "startDate": "2018-04-01",
       "endDate": "2020-01-01",
       "highlights": ["Graduated with honors", "Specialization 1: Cryptography and security", "Specialization 2: Theoretical computer science", "Complementary subject: Mathematics", Supervisor: Jiaxin Pan and Dennis Hofheinz", "Master Thesis: Anonymous and Unbounded Hierarchical Identity-Based Encryption with Tight Security"]
-    }
+    },
     {
       "institution": "KIT",
       "location": "Karlsruhe, Germany",
@@ -62,20 +62,6 @@
       "language": "French",
       "fluency": "B1",
       "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
     }
   ]
 }
