@@ -22,20 +22,33 @@
   type: time_table
   contents:
     - title: PhD
-      institution: ETH Zurich, Switzerland
-      year: 2020 – 2025
+      institution: ETH Zurich
+      location: Zurich, Switzerland
+      year: 02/2020 – 06/2025
       description:
         - "Supervisor: Dennis Hofheinz"
-        - "Thesis: Non-interactive key exchange for many users"
+        - "PhD Thesis: Non-interactive key exchange for many users"
+    - title: MSc
+      institution: KIT
+      location: Karlsruhe, Germany
+      year: 04/2018 – 01/2020
+      description:
+        - "Specialization 1: Cryptography and security",
+        - "Specialization 2: Theoretical computer science",
+        - "Complementary subject: Mathematics"
+        - "Supervisor: Jiaxin Pan and Dennis Hofheinz"
+        - "Master Thesis: Anonymous and Unbounded Hierarchical Identity-Based Encryption with Tight Security"
+    - title: BSc
+      institution: KIT
+      location: Karlsruhe, Germany
+      year: 09/2014 – 03/2018
+      description:
+        - "Complementary subject: Mathematics"
+        - "Supervisor: Jiaxin Pan and Dennis Hofheinz"
+        - "Bachelor Thesis: Identity-based Cryptography from Affine MACs"
 
 - title: Reserach interests
-  type: nested_list
+  type: list
   contents:
     - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
     - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
