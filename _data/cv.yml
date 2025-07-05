@@ -6,7 +6,7 @@
     - name: Email
       value: roman.langrehr [at] inf.ethz.ch
     - name: Orcid
-      value: "[0000-0002-4083-8073](https://orcid.org/0000-0002-4083-8073)"
+      value: "<a href="https://orcid.org/0000-0002-4083-8073">0000-0002-4083-8073</a>"
 
 - title: Employments (postdoctoral)
   type: time_table
@@ -60,7 +60,7 @@
   type: nested_list
   contents:
     - title: Conference Peer Reviews (subreviews)
-      content:
+      items:
         - TCC 2025
         - Asiacrypt 2025
         - Crypto 2025
@@ -74,10 +74,10 @@
         - Crypto 2021
         - Asiacrypt 2019
     - title: Journal Peer Reviews
-      content:
+      items:
         - DCC 2022
         - DCC 2021
     - title: Other services
-      content:
+      items:
         - contributions to cryptobib
         - member of the Local Organizing Committee for Eurocrypt 2024
