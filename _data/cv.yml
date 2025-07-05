@@ -6,7 +6,7 @@
     - name: Email
       value: roman.langrehr [at] inf.ethz.ch
     - name: Orcid
-      value: 0000-0002-4083-8073
+      value: [0000-0002-4083-8073](https://orcid.org/0000-0002-4083-8073)
 
 - title: Employments (postdoctoral)
   type: time_table
@@ -29,7 +29,7 @@
         - "Supervisor: Dennis Hofheinz"
         - "PhD Thesis: Non-interactive key exchange for many users"
     - title: MSc
-      institution: KIT
+      institution: Karlsruhe Institute of Technology (KIT)
       location: Karlsruhe, Germany
       year: 04/2018 – 01/2020
       description:
@@ -39,7 +39,7 @@
         - "Supervisor: Jiaxin Pan and Dennis Hofheinz"
         - "Master Thesis: Anonymous and Unbounded Hierarchical Identity-Based Encryption with Tight Security"
     - title: BSc
-      institution: KIT
+      institution: Karlsruhe Institute of Technology (KIT)
       location: Karlsruhe, Germany
       year: 09/2014 – 03/2018
       description:
@@ -57,10 +57,10 @@
     - Lattice-based cryptography
 
 - title: Services To The Scientific Community
-  type: list_groups
+  type: nested_list
   contents:
-    - category: Conference Peer Reviews (subreviews)
-      items:
+    - title: Conference Peer Reviews (subreviews)
+      content:
         - TCC 2025
         - Asiacrypt 2025
         - Crypto 2025
@@ -73,11 +73,11 @@
         - ICALP Track A 2021
         - Crypto 2021
         - Asiacrypt 2019
-    - category: Journal Peer Reviews
-      items:
+    - title: Journal Peer Reviews
+      content:
         - DCC 2022
         - DCC 2021
-    - category: Other services
-      items:
+    - title: Other services
+      content:
         - contributions to cryptobib
         - member of the Local Organizing Committee for Eurocrypt 2024
