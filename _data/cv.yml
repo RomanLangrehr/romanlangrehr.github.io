@@ -50,5 +50,34 @@
 - title: Reserach interests
   type: list_groups
   contents:
-    - Topic 1.
-    - Topic 2.
+    - Identity-based and functional encryption
+    - Registration-based (functional) encryption
+    - Non-interactive key exchange
+    - Group- and pairing-based cryptography
+    - Lattice-based cryptography
+
+- title: Services To The Scientific Community
+  type: nested_list
+  contents:
+    - title: Conference Peer Reviews (subreviews)
+      contents:
+        - TCC 2025
+        - Asiacrypt 2025
+        - Crypto 2025
+        - PKC 2025
+        - Eurocrypt 2025 (2 papers)
+        - TCC 2024 (2 papers)
+        - Crypto 2024 (3 papers)
+        - PKC 2022
+        - Indocrypt 2022
+        - ICALP Track A 2021
+        - Crypto 2021
+        - Asiacrypt 2019
+    - title: Journal Peer Reviews
+      contents:
+        - DCC 2022
+        - DCC 2021
+    - title: Other services
+      contents:
+        - contributions to cryptobib
+        - member of the Local Organizing Committee for Eurocrypt 2024
