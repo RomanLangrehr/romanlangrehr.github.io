@@ -33,8 +33,8 @@
       location: Karlsruhe, Germany
       year: 04/2018 – 01/2020
       description:
-        - "Specialization 1: Cryptography and security",
-        - "Specialization 2: Theoretical computer science",
+        - "Specialization 1: Cryptography and security"
+        - "Specialization 2: Theoretical computer science"
         - "Complementary subject: Mathematics"
         - "Supervisor: Jiaxin Pan and Dennis Hofheinz"
         - "Master Thesis: Anonymous and Unbounded Hierarchical Identity-Based Encryption with Tight Security"
