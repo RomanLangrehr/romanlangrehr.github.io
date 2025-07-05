@@ -6,7 +6,7 @@
     - name: Email
       value: roman.langrehr [at] inf.ethz.ch
     - name: Orcid
-      value: "<a href="https://orcid.org/0000-0002-4083-8073">0000-0002-4083-8073</a>"
+      value: <a href="https://orcid.org/0000-0002-4083-8073">0000-0002-4083-8073</a>
 
 - title: Employments (postdoctoral)
   type: time_table
