@@ -48,7 +48,7 @@
         - "Bachelor Thesis: Identity-based Cryptography from Affine MACs"
 
 - title: Reserach interests
-  type: list_groups
+  type: list
   contents:
     - Identity-based and functional encryption
     - Registration-based (functional) encryption
@@ -57,10 +57,10 @@
     - Lattice-based cryptography
 
 - title: Services To The Scientific Community
-  type: nested_list
+  type: list_groups
   contents:
-    - title: Conference Peer Reviews (subreviews)
-      contents:
+    - category: Conference Peer Reviews (subreviews)
+      items:
         - TCC 2025
         - Asiacrypt 2025
         - Crypto 2025
@@ -73,11 +73,11 @@
         - ICALP Track A 2021
         - Crypto 2021
         - Asiacrypt 2019
-    - title: Journal Peer Reviews
-      contents:
+    - category: Journal Peer Reviews
+      items:
         - DCC 2022
         - DCC 2021
-    - title: Other services
-      contents:
+    - category: Other services
+      items:
         - contributions to cryptobib
         - member of the Local Organizing Committee for Eurocrypt 2024
