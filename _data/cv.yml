@@ -1,15 +1,20 @@
 - title: General Information
   type: map
   contents:
-    - name: Full Name
+    - name: Name
       value: Roman Langrehr
+    - name: Email:
+      value: roman.langrehr [at] inf.ethz.ch
+    - name: Orcid:
+      value: 0000-0002-4083-8073
 
 - title: Employments (postdoctoral)
   type: time_table
   contents:
     - title: Postdoc
-      institution: University of Waterloo, Canada
-      year: 2025 - ongoing
+      institution: University of Waterloo
+      location: Waterloo, Canada
+      year: 07/2025 - ongoing
       description:
         - "Supervisor: Mohammad Hajiabadi"
 
