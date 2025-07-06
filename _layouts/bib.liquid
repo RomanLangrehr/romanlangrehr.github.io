@@ -256,6 +256,9 @@
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
       {% endif %}
+      {% if entry.bibtex_show %}
+        <a class="bibtex btn btn-sm z-depth-0" role="button">cryptobib</a>
+      {% endif %}
     </div>
     {% if site.enable_publication_badges %}
       {% assign entry_has_altmetric_badge = false %}
@@ -360,7 +363,7 @@
       <!-- Hidden bibtex block -->
       <div class="bibtex hidden">
         {% highlight bibtex %}
-        {{- entry.bibtex | hideCustomBibtex -}}
+        {{- entry.bibtex.key | hideCustomBibtex -}}
         {% endhighlight %}
       </div>
     {% endif %}
