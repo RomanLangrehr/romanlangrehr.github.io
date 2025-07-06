@@ -1,9 +1,9 @@
-"Eurocrypt":
+"Eurocrypt 2025":
   url: https://eurocrypt.iacr.org/2025/
+  color: "rgba(38, 109, 211, 0.5)"
 
 "PhysRev":
   url: https://journals.aps.org/
-  color: "rgba(38, 109, 211, 0.5)"
 
 "Vision":
   color: "#009f36"
