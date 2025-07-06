@@ -7,7 +7,7 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: <a href="mailto:Roman Langrehr <roman.langrehr [at] inf.ethz.ch>"><i class="fa-solid fa-envelope"></i>roman.langrehr [at] inf.ethz.ch</a><br><a href="https://orcid.org/0000-0002-4083-8073"><i class="ai ai-orcid"></i>0000-0002-4083-8073</a>
+  more_info: <a href="mailto:Roman Langrehr <roman.langrehr [at] inf.ethz.ch>"><i class="fa-solid fa-envelope"></i> roman.langrehr [at] inf.ethz.ch</a><br><a href="https://orcid.org/0000-0002-4083-8073"><i class="ai ai-orcid"></i> 0000-0002-4083-8073</a>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
