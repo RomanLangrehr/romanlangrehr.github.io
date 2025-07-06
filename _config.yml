@@ -286,10 +286,10 @@ scholar:
   group_by: year
   group_order: descending
   type_order: [conference, incollections, inproceedings, proceedings, unpublished, article, inbook, book, misc, techreport]
-  type_names: {misc: preprints, article: journal articles, inproceedings: conference papers}
+  type_names: {misc: Preprints}
   
   sort_by: year, month
-  order: descending, ascending # can be either "ascending" or "descending"
+  order: descending, descending # can be either "ascending" or "descending"
 
 # Display different badges withs stats for your publications
 # Customize badge behavior in _layouts/bib.liquid
