@@ -10003,30 +10003,52 @@
 @string{xxxx20addr =            ""}
 @string{xxxx20month =           ""}
 
-@InProceedings{AC:LanPan20,
-  author =       "Roman Langrehr and
-                  Jiaxin Pan",
-  title =        "Unbounded {HIBE} with Tight Security",
-  pages =        "129--159",
-  editor =       asiacrypt20ed,
-  booktitle =    asiacrypt20name2,
-  volume =       asiacrypt20vol2,
-  address =      asiacrypt20addr,
-  month =        asiacrypt20month,
-  publisher =    asiacrypt20pub,
-  series =       mylncs,
-  year =         2020,
-  doi =          "10.1007/978-3-030-64834-3_5",
-  abbr =         "Asiacrypt 2020",
+@InProceedings{EPRINT:FieLan25,
+  author =       "Rune Fiedler and
+                  Roman Langrehr",
+  title =        "On Deniable Authentication against Malicious Verifiers",
+  month =        aug,
+  year =         2025,
+  booktitle =    "Crypto 2025 (to appear)",
+  eprint =       "2025/470",
+  abbr =         "Crypto 2025",
+  selected={true},
   bibtex_show={true},
-  eprint =       "2020/1099",
-  slides =       "https://iacr.org/submit/files/slides/2020/asiacrypt/ac2020/313/slides.pdf",
-  video =        "https://youtube.com/watch?v=o3wes8g5spk",
-  abstract =     "We propose the first tightly secure and unbounded hierarchical identity-based encryption (HIBE) scheme based on standard assumptions. Our main technical contribution is a novel proof strategy that allows us to tightly randomize user secret keys for identities with arbitrary hierarchy depths using low entropy hidden in a small and hierarchy-independent master public key.<br><br>
+  abstract =     "Deniable authentication allows Alice to authenticate a message to Bob, while retaining deniability towards third parties. In particular, not even Bob can convince a third party that Alice authenticated that message. Clearly, in this setting Bob should not be considered trustworthy. Furthermore, deniable authentication is necessary for deniable key exchange, as explicitly desired by Signal and off-the-record (OTR) messaging.<br><br>
 
-The notion of unbounded HIBE is proposed by Lewko and Waters (Eurocrypt 2011). In contrast to most HIBE schemes, an unbounded scheme does not require any maximum depth to be specified in the setup phase, and user secret keys or ciphertexts can be generated for identities of arbitrary depths with hierarchy-independent system parameters.<br><br>
+In this work we focus on (publicly verifiable) designated verifier signatures (DVS), which are a widely used primitive to achieve deniable authentication. We propose a definition of deniability against malicious verifiers for DVS. We give a construction that achieves this notion in the random oracle (RO) model. Moreover, we show that our notion is not achievable in the standard model with a concrete attack; thereby giving a non-contrived example of the RO heuristic failing.<br><br>
 
-While all the previous unbounded HIBE schemes have security loss that grows at least linearly in the number of user secret key queries, the security loss of our scheme is only dependent on the security parameter, even in the multi-challenge setting, where an adversary can ask for multiple challenge ciphertexts. We prove the adaptive security of our scheme based on the Matrix Decisional Diffie-Hellman assumption in prime-order pairing groups, which generalizes a family of standard Diffie-Hellman assumptions such as k-Linear."
+All previous protocols that claim to achieve deniable authentication against malicious verifiers (like Signal's initial handshake protocols X3DH and PQXDH) rely on the Extended Knowledge of Diffie–Hellman (EKDH) assumption. We show that this assumption is broken and that these protocols do not achieve deniability against malicious verifiers."
+}
+
+@InProceedings{PKC:ChaHofLan25,
+  author =       "Suvradip Chakraborty and
+                  Dennis Hofheinz and
+                  Roman Langrehr",
+  title =        "Non-interactive Key Exchange: New Notions, New Constructions, and Forward Security",
+  pages =        "203--236",
+  editor =       pkc25ed,
+  booktitle =    pkc25name2,
+  volume =       pkc25vol2,
+  address =      pkc25addr,
+  month =        pkc25month,
+  publisher =    pkc25pub,
+  series =       mylncs,
+  year =         2025,
+  doi =          "10.1007/978-3-031-91823-0_7",
+  abbr =         "PKC 2025",
+  bibtex_show={true},
+  eprint =       "2025/310",
+  slides =       "https://iacr.org/submit/files/slides/2025/pkc/pkc2025/192/192_slides.pdf",
+  abstract =     "Non-interactive key exchange (NIKE) is a simple and elegant cryptographic primitive that allows two or more users to agree on a secret shared key without any interaction. NIKE schemes have been formalized in different scenarios (such as the public-key, or the identity-based setting), and have found many applications in cryptography.<br><br>
+
+In this work, we propose a NIKE variant that generalizes public-key and identity-based NIKE: a multi-authority identity-based NIKE (MA-ID-NIKE) is defined like an identity-based NIKE, only with several identity domains (i.e., several instances of an identity-based NIKE), and such that users from different identity domains can compute shared keys. This makes MA-ID-NIKE schemes more versatile than existing NIKE or identity-based NIKE schemes, for instance, in an application in which users from different (centrally managed) companies need to compute shared keys.<br><br>
+
+We show several results for MA-ID-NIKE schemes:<br>
+ - We show that MA-ID-NIKE schemes generically imply public-key NIKEs, identity-based NIKEs, as well as forward-secure NIKE schemes, the latter of which are notoriously hard to construct.<br>
+ - We propose two simple constructions of MA-ID-NIKE schemes from indistinguishability obfuscation (iO) and multilinear maps, respectively. These constructions achieve only selective security, but can be leveraged to adaptive security for small groups of users (that want to be able to agree on a joint shared key) in the random oracle model.<br>
+ - We give a simple and elegant construction of MA-ID-NIKEs from identity-based encryption (IBE) and universal samplers. This construction achieves adaptive security also for large groups of users based on the adaptive security of the used universal samplers. Universal samplers, in turn, are known to be achievable using iO in the random oracle model. As a nice feature, the same construction yields hierarchical MA-ID-NIKEs or public-key NIKEs when instantiated with hierarchical IBE or public-key encryption instead of IBE schemes.<br>
+While these results are clearly only feasibility results, they do demonstrate the achievability of a concept that itself has very practical use cases."
 }
 
 @InProceedings{EC:CHLNSV25,
@@ -10059,34 +10081,51 @@ In this work, we investigate malleable SNARKs, a generalization of this concept 
 Technically, our malleable SNARK construction relies on recursive proofs, but with a twist: in order to support the strong indistinguishability properties of mauled and fresh SNARK proofs, we need to allow an unbounded recursion depth. To still allow for a reasonable notion of extractability in this setting (and in particular to guarantee that extraction eventually finishes with a “proper” witness that does not refer to a previous SNARK proof), we rely on a new and generic computational primitive called adversarial one-way function (AOWF) that may be of independent interest. We give an AOWF candidate and prove it secure in the random oracle model."
 }
 
-@InProceedings{PKC:ChaHofLan25,
-  author =       "Suvradip Chakraborty and
-                  Dennis Hofheinz and
-                  Roman Langrehr",
-  title =        "Non-interactive Key Exchange: New Notions, New Constructions, and Forward Security",
-  pages =        "203--236",
-  editor =       pkc25ed,
-  booktitle =    pkc25name2,
-  volume =       pkc25vol2,
-  address =      pkc25addr,
-  month =        pkc25month,
-  publisher =    pkc25pub,
+@InProceedings{TCC:HLOW24,
+  author =       "Mohammad Hajiabadi and
+                  Roman Langrehr and
+                  Adam O'Neill and
+                  Mingyuan Wang",
+  title =        "On the Black-Box Complexity of Private-Key Inner-Product Functional Encryption",
+  pages =        "318--343",
+  editor =       tcc24ed,
+  booktitle =    tcc24name3,
+  volume =       tcc24vol3,
+  address =      tcc24addr,
+  month =        tcc24month,
+  publisher =    tcc24pub,
   series =       mylncs,
-  year =         2025,
-  doi =          "10.1007/978-3-031-91823-0_7",
-  abbr =         "PKC 2025",
+  year =         2024,
+  doi =          "10.1007/978-3-031-78020-2_11",
+  abbr =         "TCC 2024",
   bibtex_show={true},
-  eprint =       "2025/310",
-  slides =       "https://iacr.org/submit/files/slides/2025/pkc/pkc2025/192/192_slides.pdf",
-  abstract =     "Non-interactive key exchange (NIKE) is a simple and elegant cryptographic primitive that allows two or more users to agree on a secret shared key without any interaction. NIKE schemes have been formalized in different scenarios (such as the public-key, or the identity-based setting), and have found many applications in cryptography.<br><br>
+  eprint =       "2024/1877",
+  slides =       "https://iacr.org/submit/files/slides/2024/tcc/tcc2024/165/165_slides.pdf",
+  abstract =     "We initiate the study of the black-box complexity of private-key functional encryption (FE). Of central importance in the private-key setting is the inner-product functionality, which is currently only known from assumptions that imply public-key encryption, such as Decisional Diffie-Hellman or Learning-with-Errors.  As our main result, we rule out black-box constructions of private-key inner-product FE from random oracles. This implies a black-box separation between private-key inner-product FE from all symmetric-key primitives implied by random oracles (e.g., symmetric-key encryption and collision-resistant hash functions).<br><br>
 
-In this work, we propose a NIKE variant that generalizes public-key and identity-based NIKE: a multi-authority identity-based NIKE (MA-ID-NIKE) is defined like an identity-based NIKE, only with several identity domains (i.e., several instances of an identity-based NIKE), and such that users from different identity domains can compute shared keys. This makes MA-ID-NIKE schemes more versatile than existing NIKE or identity-based NIKE schemes, for instance, in an application in which users from different (centrally managed) companies need to compute shared keys.<br><br>
+Proving lower bounds for private-key functional encryption schemes introduces challenges that were absent in prior works. In particular, the combinatorial techniques developed by prior works for proving black-box lower bounds are only useful in the public-key setting and predicate encryption settings, which all fail for the private-key FE case. Our work develops novel combinatorial techniques based on Fourier analysis to overcome these barriers. We expect these techniques to be widely useful in future research in this area."
+}
 
-We show several results for MA-ID-NIKE schemes:<br>
- - We show that MA-ID-NIKE schemes generically imply public-key NIKEs, identity-based NIKEs, as well as forward-secure NIKE schemes, the latter of which are notoriously hard to construct.<br>
- - We propose two simple constructions of MA-ID-NIKE schemes from indistinguishability obfuscation (iO) and multilinear maps, respectively. These constructions achieve only selective security, but can be leveraged to adaptive security for small groups of users (that want to be able to agree on a joint shared key) in the random oracle model.<br>
- - We give a simple and elegant construction of MA-ID-NIKEs from identity-based encryption (IBE) and universal samplers. This construction achieves adaptive security also for large groups of users based on the adaptive security of the used universal samplers. Universal samplers, in turn, are known to be achievable using iO in the random oracle model. As a nice feature, the same construction yields hierarchical MA-ID-NIKEs or public-key NIKEs when instantiated with hierarchical IBE or public-key encryption instead of IBE schemes.<br>
-While these results are clearly only feasibility results, they do demonstrate the achievability of a concept that itself has very practical use cases."
+@Misc{EPRINT:AFLO24,
+  author =       "Ojaswi Acharya and
+                  Weiqi Feng and
+                  Roman Langrehr and
+                  Adam O'Neill",
+  title =        "Access-Controlled Inner Product Function-Revealing Encryption",
+  month =        nov,
+  year =         2024,
+  howpublished = "Cryptology ePrint Archive, Report 2024/1857",
+  journal =      "Cryptology ePrint Archive",
+  eprint =       "2024/1857",
+  abbr =         "ePrint",
+  bibtex_show={true},
+  abstract =     "We extend the concept of access control for functional encryption, introduced by Abdalla et al. (ASIACRYPT 2020), to function-revealing encryption (Joy and Passelègue, SCN 2018). Here “access control” means that function evaluation is only possible when a specified access policy is met. Specifically, we introduce access-controlled inner product function-revealing encryption (AC-IPFRE) and give two applications.<br><br>
+
+On the theoretical side, we use AC-IPFRE to show that function-hiding inner-product functional encryption (FH-IPFE), introduced by Bishop et al. (ASIACRYPT 2015), is equivalent to IPFRE. To show this, we in particular generically construct AC-IPFRE from IPFRE for the “non-zero inner-product” (NZIP) access policy. This result uses an effective version of Lagrange’s Four Square Theorem. One consequence of this result is that lower bounds by Ünal (EUROCRYPT 2020) suggest that, as for FH-IPFE, bilinear pairings will be needed to build IPFRE.<br><br>
+
+On the practical side, we build an outsourced approximate nearest-neighbor (ANN) search protocol and mitigate its leakage via AC-IPFRE. For this, we construct a practical AC-IPFRE scheme in the generic bilinear group model for a specific access policy for ANN search. To this end, we show that techniques of Wee (TCC 2020) implicitly give the most practical FH-IPFE scheme to date. We implement the resulting outsourced ANN search protocol and report on its performance.<br><br>
+
+Of independent interest, we show AC-IPFRE for NZIP implies attribute-hiding small-universe AC-IPFRE for arbitrary access policies. Previous work on access control for FE did not achieve attribute hiding. Overall, our results demonstrate that AC-IPFRE is of both theoretical and practical interest and set the stage for future work in the area."
 }
 
 @InProceedings{PKC:HHLU24,
@@ -10121,82 +10160,6 @@ In this work, we propose the first framework for structure-preserving cryptograp
 Along the way, we also discover a new and efficient strongly secure lattice-based signature scheme. This scheme combines Rückert's lattice-based signature scheme with the lattice delegation strategy of Agrawal et al., which yields more compact and efficient signatures.<br><br>
 
 We hope that our framework provides a first step towards a modular and versatile treatment of cryptographic primitives in the lattice setting."
-}
-
-
-@InProceedings{PKC:LanPan20,
-  author =       "Roman Langrehr and
-                  Jiaxin Pan",
-  title =        "Hierarchical Identity-Based Encryption with Tight Multi-challenge Security",
-  pages =        "153--183",
-  editor =       pkc20ed,
-  booktitle =    pkc20name1,
-  volume =       pkc20vol1,
-  address =      pkc20addr,
-  month =        pkc20month,
-  publisher =    pkc20pub,
-  series =       mylncs,
-  year =         2020,
-  doi =          "10.1007/978-3-030-45374-9_6",
-  abbr =         "PKC 2020",
-  bibtex_show={true},
-  eprint =       "2020/146",
-  slides =       "https://iacr.org/submit/files/slides/2020/pkc/pkc2020/230/slides.pdf",
-  video =        "https://youtube.com/watch?v=Z8hp1tSdgOY",
-  abstract =     "We construct the first hierarchical identity-based encryption (HIBE) scheme with tight adaptive security in the multi-challenge setting, where adversaries are allowed to ask for ciphertexts for multiple adaptively chosen identities. Technically, we develop a novel technique that can tightly introduce randomness into user secret keys for hierarchical identities in the multi-challenge setting, which cannot be easily achieved by the existing techniques for tightly multi-challenge secure IBE.<br><br>
-
-In contrast to the previous constructions, the security of our scheme is independent of the number of user secret key queries and that of challenge ciphertext queries. We prove the tight security of our scheme based on the Matrix Decisional Diffie-Hellman Assumption, which is an abstraction of standard and simple decisional Diffie-Hellman assumptions, such as the k-Linear and SXDH assumptions.<br><br>
-
-Finally, we also extend our ideas to achieve tight chosen-ciphertext security and anonymity, respectively. These security notions for HIBE have not been tightly achieved in the multi-challenge setting before."
-}
-
-
-@InProceedings{PKC:LanPan19,
-  author =       "Roman Langrehr and
-                  Jiaxin Pan",
-  title =        "Tightly Secure Hierarchical Identity-Based Encryption",
-  pages =        "436--465",
-  editor =       pkc19ed,
-  booktitle =    pkc19name1,
-  volume =       pkc19vol1,
-  address =      pkc19addr,
-  month =        pkc19month,
-  publisher =    pkc19pub,
-  series =       mylncs,
-  year =         2019,
-  doi =          "10.1007/978-3-030-17253-4_15",
-  abbr =         "PKC 2019",
-  bibtex_show={true},
-  eprint =       "2019/058",
-  slides =       "https://foc.ethz.ch/people/romanlangrehr/PKC2019.pdf",
-  abstract =     "We construct the first tightly secure hierarchical identity-based encryption (HIBE) scheme based on standard assumptions, which solves an open problem from Blazy, Kiltz, and Pan (CRYPTO 2014). At the core of our constructions is a novel randomization technique that enables us to randomize user secret keys for identities with flexible length.<br><br>
-
-The security reductions of previous HIBEs lose at least a factor of Q, which is the number of user secret key queries. Different to that, the security loss of our schemes is only dependent on the security parameter. Our schemes are adaptively secure based on the Matrix Diffie-Hellman assumption, which is a generalization of standard Diffie-Hellman assumptions such as k-Linear. We have two tightly secure constructions, one with constant ciphertext size, and the other with tighter security at the cost of linear ciphertext size. Among other things, our schemes imply the first tightly secure identity-based signature scheme by a variant of the Naor transformation."
-}
-
-@InProceedings{TCC:HLOW24,
-  author =       "Mohammad Hajiabadi and
-                  Roman Langrehr and
-                  Adam O'Neill and
-                  Mingyuan Wang",
-  title =        "On the Black-Box Complexity of Private-Key Inner-Product Functional Encryption",
-  pages =        "318--343",
-  editor =       tcc24ed,
-  booktitle =    tcc24name3,
-  volume =       tcc24vol3,
-  address =      tcc24addr,
-  month =        tcc24month,
-  publisher =    tcc24pub,
-  series =       mylncs,
-  year =         2024,
-  doi =          "10.1007/978-3-031-78020-2_11",
-  abbr =         "TCC 2024",
-  bibtex_show={true},
-  eprint =       "2024/1877",
-  slides =       "https://iacr.org/submit/files/slides/2024/tcc/tcc2024/165/165_slides.pdf",
-  abstract =     "We initiate the study of the black-box complexity of private-key functional encryption (FE). Of central importance in the private-key setting is the inner-product functionality, which is currently only known from assumptions that imply public-key encryption, such as Decisional Diffie-Hellman or Learning-with-Errors.  As our main result, we rule out black-box constructions of private-key inner-product FE from random oracles. This implies a black-box separation between private-key inner-product FE from all symmetric-key primitives implied by random oracles (e.g., symmetric-key encryption and collision-resistant hash functions).<br><br>
-
-Proving lower bounds for private-key functional encryption schemes introduces challenges that were absent in prior works. In particular, the combinatorial techniques developed by prior works for proving black-box lower bounds are only useful in the public-key setting and predicate encryption settings, which all fail for the private-key FE case. Our work develops novel combinatorial techniques based on Fourier analysis to overcome these barriers. We expect these techniques to be widely useful in future research in this area."
 }
 
 @InProceedings{TCC:Langrehr23,
@@ -10301,44 +10264,56 @@ security, and also illustrate the special role of NIKE when it comes to tight
 security reductions."
 }
 
-@InProceedings{EPRINT:FieLan25,
-  author =       "Rune Fiedler and
-                  Roman Langrehr",
-  title =        "On Deniable Authentication against Malicious Verifiers",
-  month =        aug,
-  year =         2025,
-  booktitle =    "Crypto 2025 (to appear)",
-  eprint =       "2025/470",
-  abbr =         "Crypto 2025",
-  selected={true},
+@InProceedings{AC:LanPan20,
+  author =       "Roman Langrehr and
+                  Jiaxin Pan",
+  title =        "Unbounded {HIBE} with Tight Security",
+  pages =        "129--159",
+  editor =       asiacrypt20ed,
+  booktitle =    asiacrypt20name2,
+  volume =       asiacrypt20vol2,
+  address =      asiacrypt20addr,
+  month =        asiacrypt20month,
+  publisher =    asiacrypt20pub,
+  series =       mylncs,
+  year =         2020,
+  doi =          "10.1007/978-3-030-64834-3_5",
+  abbr =         "Asiacrypt 2020",
   bibtex_show={true},
-  abstract =     "Deniable authentication allows Alice to authenticate a message to Bob, while retaining deniability towards third parties. In particular, not even Bob can convince a third party that Alice authenticated that message. Clearly, in this setting Bob should not be considered trustworthy. Furthermore, deniable authentication is necessary for deniable key exchange, as explicitly desired by Signal and off-the-record (OTR) messaging.<br><br>
+  eprint =       "2020/1099",
+  slides =       "https://iacr.org/submit/files/slides/2020/asiacrypt/ac2020/313/slides.pdf",
+  video =        "https://youtube.com/watch?v=o3wes8g5spk",
+  abstract =     "We propose the first tightly secure and unbounded hierarchical identity-based encryption (HIBE) scheme based on standard assumptions. Our main technical contribution is a novel proof strategy that allows us to tightly randomize user secret keys for identities with arbitrary hierarchy depths using low entropy hidden in a small and hierarchy-independent master public key.<br><br>
 
-In this work we focus on (publicly verifiable) designated verifier signatures (DVS), which are a widely used primitive to achieve deniable authentication. We propose a definition of deniability against malicious verifiers for DVS. We give a construction that achieves this notion in the random oracle (RO) model. Moreover, we show that our notion is not achievable in the standard model with a concrete attack; thereby giving a non-contrived example of the RO heuristic failing.<br><br>
+The notion of unbounded HIBE is proposed by Lewko and Waters (Eurocrypt 2011). In contrast to most HIBE schemes, an unbounded scheme does not require any maximum depth to be specified in the setup phase, and user secret keys or ciphertexts can be generated for identities of arbitrary depths with hierarchy-independent system parameters.<br><br>
 
-All previous protocols that claim to achieve deniable authentication against malicious verifiers (like Signal's initial handshake protocols X3DH and PQXDH) rely on the Extended Knowledge of Diffie–Hellman (EKDH) assumption. We show that this assumption is broken and that these protocols do not achieve deniability against malicious verifiers."
+While all the previous unbounded HIBE schemes have security loss that grows at least linearly in the number of user secret key queries, the security loss of our scheme is only dependent on the security parameter, even in the multi-challenge setting, where an adversary can ask for multiple challenge ciphertexts. We prove the adaptive security of our scheme based on the Matrix Decisional Diffie-Hellman assumption in prime-order pairing groups, which generalizes a family of standard Diffie-Hellman assumptions such as k-Linear."
 }
 
-@Misc{EPRINT:AFLO24,
-  author =       "Ojaswi Acharya and
-                  Weiqi Feng and
-                  Roman Langrehr and
-                  Adam O'Neill",
-  title =        "Access-Controlled Inner Product Function-Revealing Encryption",
-  month =        nov,
-  year =         2024,
-  howpublished = "Cryptology ePrint Archive, Report 2024/1857",
-  journal =      "Cryptology ePrint Archive",
-  eprint =       "2024/1857",
-  abbr =         "ePrint",
+@InProceedings{PKC:LanPan20,
+  author =       "Roman Langrehr and
+                  Jiaxin Pan",
+  title =        "Hierarchical Identity-Based Encryption with Tight Multi-challenge Security",
+  pages =        "153--183",
+  editor =       pkc20ed,
+  booktitle =    pkc20name1,
+  volume =       pkc20vol1,
+  address =      pkc20addr,
+  month =        pkc20month,
+  publisher =    pkc20pub,
+  series =       mylncs,
+  year =         2020,
+  doi =          "10.1007/978-3-030-45374-9_6",
+  abbr =         "PKC 2020",
   bibtex_show={true},
-  abstract =     "We extend the concept of access control for functional encryption, introduced by Abdalla et al. (ASIACRYPT 2020), to function-revealing encryption (Joy and Passelègue, SCN 2018). Here “access control” means that function evaluation is only possible when a specified access policy is met. Specifically, we introduce access-controlled inner product function-revealing encryption (AC-IPFRE) and give two applications.<br><br>
+  eprint =       "2020/146",
+  slides =       "https://iacr.org/submit/files/slides/2020/pkc/pkc2020/230/slides.pdf",
+  video =        "https://youtube.com/watch?v=Z8hp1tSdgOY",
+  abstract =     "We construct the first hierarchical identity-based encryption (HIBE) scheme with tight adaptive security in the multi-challenge setting, where adversaries are allowed to ask for ciphertexts for multiple adaptively chosen identities. Technically, we develop a novel technique that can tightly introduce randomness into user secret keys for hierarchical identities in the multi-challenge setting, which cannot be easily achieved by the existing techniques for tightly multi-challenge secure IBE.<br><br>
 
-On the theoretical side, we use AC-IPFRE to show that function-hiding inner-product functional encryption (FH-IPFE), introduced by Bishop et al. (ASIACRYPT 2015), is equivalent to IPFRE. To show this, we in particular generically construct AC-IPFRE from IPFRE for the “non-zero inner-product” (NZIP) access policy. This result uses an effective version of Lagrange’s Four Square Theorem. One consequence of this result is that lower bounds by Ünal (EUROCRYPT 2020) suggest that, as for FH-IPFE, bilinear pairings will be needed to build IPFRE.<br><br>
+In contrast to the previous constructions, the security of our scheme is independent of the number of user secret key queries and that of challenge ciphertext queries. We prove the tight security of our scheme based on the Matrix Decisional Diffie-Hellman Assumption, which is an abstraction of standard and simple decisional Diffie-Hellman assumptions, such as the k-Linear and SXDH assumptions.<br><br>
 
-On the practical side, we build an outsourced approximate nearest-neighbor (ANN) search protocol and mitigate its leakage via AC-IPFRE. For this, we construct a practical AC-IPFRE scheme in the generic bilinear group model for a specific access policy for ANN search. To this end, we show that techniques of Wee (TCC 2020) implicitly give the most practical FH-IPFE scheme to date. We implement the resulting outsourced ANN search protocol and report on its performance.<br><br>
-
-Of independent interest, we show AC-IPFRE for NZIP implies attribute-hiding small-universe AC-IPFRE for arbitrary access policies. Previous work on access control for FE did not achieve attribute hiding. Overall, our results demonstrate that AC-IPFRE is of both theoretical and practical interest and set the stage for future work in the area."
+Finally, we also extend our ideas to achieve tight chosen-ciphertext security and anonymity, respectively. These security notions for HIBE have not been tightly achieved in the multi-challenge setting before."
 }
 
 @Article{JC:LanPan20,
@@ -10356,6 +10331,29 @@ Of independent interest, we show AC-IPFRE for NZIP implies attribute-hiding smal
   abbr =         "JoC",
   bibtex_show={true},
   eprint =       "2019/058",
+  abstract =     "We construct the first tightly secure hierarchical identity-based encryption (HIBE) scheme based on standard assumptions, which solves an open problem from Blazy, Kiltz, and Pan (CRYPTO 2014). At the core of our constructions is a novel randomization technique that enables us to randomize user secret keys for identities with flexible length.<br><br>
+
+The security reductions of previous HIBEs lose at least a factor of Q, which is the number of user secret key queries. Different to that, the security loss of our schemes is only dependent on the security parameter. Our schemes are adaptively secure based on the Matrix Diffie-Hellman assumption, which is a generalization of standard Diffie-Hellman assumptions such as k-Linear. We have two tightly secure constructions, one with constant ciphertext size, and the other with tighter security at the cost of linear ciphertext size. Among other things, our schemes imply the first tightly secure identity-based signature scheme by a variant of the Naor transformation."
+}
+
+@InProceedings{PKC:LanPan19,
+  author =       "Roman Langrehr and
+                  Jiaxin Pan",
+  title =        "Tightly Secure Hierarchical Identity-Based Encryption",
+  pages =        "436--465",
+  editor =       pkc19ed,
+  booktitle =    pkc19name1,
+  volume =       pkc19vol1,
+  address =      pkc19addr,
+  month =        pkc19month,
+  publisher =    pkc19pub,
+  series =       mylncs,
+  year =         2019,
+  doi =          "10.1007/978-3-030-17253-4_15",
+  abbr =         "PKC 2019",
+  bibtex_show={true},
+  eprint =       "2019/058",
+  slides =       "https://foc.ethz.ch/people/romanlangrehr/PKC2019.pdf",
   abstract =     "We construct the first tightly secure hierarchical identity-based encryption (HIBE) scheme based on standard assumptions, which solves an open problem from Blazy, Kiltz, and Pan (CRYPTO 2014). At the core of our constructions is a novel randomization technique that enables us to randomize user secret keys for identities with flexible length.<br><br>
 
 The security reductions of previous HIBEs lose at least a factor of Q, which is the number of user secret key queries. Different to that, the security loss of our schemes is only dependent on the security parameter. Our schemes are adaptively secure based on the Matrix Diffie-Hellman assumption, which is a generalization of standard Diffie-Hellman assumptions such as k-Linear. We have two tightly secure constructions, one with constant ciphertext size, and the other with tighter security at the cost of linear ciphertext size. Among other things, our schemes imply the first tightly secure identity-based signature scheme by a variant of the Naor transformation."
