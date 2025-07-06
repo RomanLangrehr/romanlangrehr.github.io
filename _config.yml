@@ -283,8 +283,6 @@ scholar:
   details_link: Details
 
   query: "@*"
-  group_by: year
-  group_order: descending
   type_order: [conference, incollections, inproceedings, proceedings, unpublished, article, inbook, book, misc, techreport]
   type_names: {misc: Preprints}
   
