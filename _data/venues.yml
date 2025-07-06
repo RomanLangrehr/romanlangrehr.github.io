@@ -19,7 +19,7 @@
   color: "#0b3f87"
 
 "PKC 2020":
-  url: https://pkc.iacr.org/2024/
+  url: https://pkc.iacr.org/2020/
   color: "#102a83"
 
 "PKC 2019":
@@ -42,6 +42,6 @@
   url: https://eprint.iacr.org/
   color: "#0a60af"
 
-"Journal of Cryptology":
+"JoC":
   url: https://link.springer.com/journal/145
   color: "#570d14"
