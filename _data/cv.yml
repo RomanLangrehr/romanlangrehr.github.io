@@ -7,6 +7,12 @@
       value: <a href="mailto:Roman Langrehr <roman.langrehr [at] inf.ethz.ch>">roman.langrehr [at] inf.ethz.ch</a>
     - name: Orcid
       value: <a href="https://orcid.org/0000-0002-4083-8073">0000-0002-4083-8073</a>
+    - name: DBLP
+      value: <a href="https://dblp.org/pid/235/5014.html">https://dblp.org/pid/235/5014.html</a>
+    - name: Google scholar
+      value: <a href="https://scholar.google.com/citations?user=OeGAIG8AAAAJ">OeGAIG8AAAAJ</a>
+    - name: Scopus ID
+      value: <a href="https://www.scopus.com/authid/detail.uri?authorId=57208479922">57208479922</a>
 
 - title: Employments (postdoctoral)
   type: time_table
