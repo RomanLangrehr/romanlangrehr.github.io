@@ -29,7 +29,7 @@ latest_posts:
   
 scholar:
   sort_by: year, month
-  order: descending  # can be either "ascending" or "descending"
+  order: descending, descending # can be either "ascending" or "descending"
 ---
 
-I am a Postdoc in the group of [Mohammad Hajiabadi](https://sites.google.com/view/mdhajiabadi/home) at the University of Waterloo. Before that, I did my PhD at ETH Zurich under the supervision of [Dennis Hofheinz](https://people.inf.ethz.ch/dhofheinz/). Even earlier, I completed my Bachelor and Master in computer science at the Karlsruhe Institute of Technology (KIT), where both my Bachelor and Master thesis where supervised by [Jiaxin Pan](https://sites.google.com/view/jiaxinpan).
+I am a Postdoc in the group of [Mohammad Hajiabadi](https://sites.google.com/view/mdhajiabadi/home) at the University of Waterloo. Before that, I did my PhD at ETH Zurich under the supervision of [Dennis Hofheinz](https://people.inf.ethz.ch/dhofheinz/). Even earlier, I completed my Bachelor and Master in computer science at the Karlsruhe Institute of Technology (KIT), where both my Bachelor and Master thesis were supervised by [Jiaxin Pan](https://sites.google.com/view/jiaxinpan).
