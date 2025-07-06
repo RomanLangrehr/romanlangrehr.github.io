@@ -284,8 +284,8 @@ scholar:
 
   query: "@*"
   type_order: [conference, incollections, inproceedings, proceedings, unpublished, article, inbook, book, misc, techreport]
-  type_names: {misc: Preprints}
-  
+  type_names: { misc: Preprints }
+
   month_order: [jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec]
   sort_by: year, month
   order: descending, descending # can be either "ascending" or "descending"
