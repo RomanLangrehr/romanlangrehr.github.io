@@ -1,9 +1,47 @@
+"Asiacrypt 2020":
+  url: https://asiacrypt.iacr.org/2020/
+  color: "#102a83"
+
+"Crypto 2025":
+  url: https://crypto.iacr.org/2025/
+  color: "#046577"
+
 "Eurocrypt 2025":
   url: https://eurocrypt.iacr.org/2025/
   color: "#003df6"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"PKC 2025":
+  url: https://pkc.iacr.org/2025/
+  color: "#102a83"
 
-"Vision":
-  color: "#009f36"
+"PKC 2024":
+  url: https://pkc.iacr.org/2024/
+  color: "#0b3f87"
+
+"PKC 2020":
+  url: https://pkc.iacr.org/2024/
+  color: "#102a83"
+
+"PKC 2019":
+  url: https://pkc.iacr.org/2019/
+  color: "#7ecb67"
+
+"TCC 2024":
+  url: https://tcc.iacr.org/2024/
+  color: "#1e7536"
+
+"TCC 2023":
+  url: https://tcc.iacr.org/2023/
+  color: "#046577"
+
+"TCC 2021":
+  url: https://tcc.iacr.org/2021/
+  color: "#258e42"
+
+"ePrint":
+  url: https://eprint.iacr.org/
+  color: "#0a60af"
+
+"Journal of Cryptology":
+  url: https://link.springer.com/journal/145
+  color: "#570d14"
