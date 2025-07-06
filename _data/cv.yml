@@ -53,6 +53,15 @@
         - "Supervisor: Jiaxin Pan and Dennis Hofheinz"
         - "Bachelor Thesis: Identity-based Cryptography from Affine MACs"
 
+- title: Scholarships and grants
+  type: time_table
+  contents:
+    - title: <a href="https://www.snf.ch/en/XIZpfY3iVS5KRRoD/funding/careers/postdoc-mobility">SNF Postdoc.Mobility</a>
+      year: 08/2025 – 07/2027
+    - title: <a href="https://www.deutschlandstipendium.de/deutschlandstipendium/de/services/english/the-deutschlandstipendium-best-of-both-worlds-for-students.html">Deutschlandstipendium</a>
+      year: 10/2015 – 09/2019
+      description: Awarded 4 times continously for the duration of one year
+
 - title: Reserach interests
   type: list
   contents:
