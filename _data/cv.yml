@@ -4,7 +4,7 @@
     - name: Name
       value: Roman Langrehr
     - name: Email
-      value: <a href="mailto:roman.langrehr [at] inf.ethz.ch">roman.langrehr [at] inf.ethz.ch</a>
+      value: <a href="mailto:Roman Langrehr <roman.langrehr [at] inf.ethz.ch>">roman.langrehr [at] inf.ethz.ch</a>
     - name: Orcid
       value: <a href="https://orcid.org/0000-0002-4083-8073">0000-0002-4083-8073</a>
 

@@ -1,6 +1,6 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"Eurocrypt 2025":
+  url: https://eurocrypt.iacr.org/2025/
+  color: "rgba(38, 109, 211, 0.5)"
 
 "PhysRev":
   url: https://journals.aps.org/
