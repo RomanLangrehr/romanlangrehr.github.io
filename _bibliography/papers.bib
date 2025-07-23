@@ -10003,6 +10003,26 @@
 @string{xxxx20addr =            ""}
 @string{xxxx20month =           ""}
 
+@misc{EPRINT:Langrehr25,
+      author = {Roman Langrehr},
+      title = {Limits on the Power of Constrained {PRFs} and Identity-based Cryptography},
+      howpublished = {Cryptology {ePrint} Archive, Paper 2025/1338},
+      month = jul
+      year = {2025},
+      url = {https://eprint.iacr.org/2025/1338},
+  journal =      "Cryptology ePrint Archive",
+  eprint =       "2025/1338",
+  abbr =         "ePrint",
+  bibtex_show={false},
+  abstract =     "Constrained PRFs are PRFs that allow the generation of constrained keys, which can be used to evaluate the PRF on a subset of the inputs. The PRF is still pseudorandom for an adversary how obtains multiple of these constrained keys on all inputs where none of the constrained keys allow it to evaluate the PRF. Constrained PRFs are known for some simple constraint classes (such as puncturing or intervals) from one-way functions, but for more powerful constraint classes such as bitfixing the only known constructions need heavy machinery, like indistinguishability obfuscation or multilinear maps.<br><br>
+
+In this work we show that constrained PRFs (for any constraint class) do not imply key agreement in a black-box way with an oracle separation. The result also applies to delegatable constrained PRFs, where constrained keys can be used to generate other, more restrictive constrained keys.<br><br>
+
+We show that this result has interesting applications for identity-based cryptography, where users obtain secret keys from a trusted, central authority. Namely, it shows that primitives that allow key agreement in this setting, like identity-based non-interactive key exchange and a weaker variant of identity-based encryption that we introduce in this work, do not imply key agreement and thus can exist even in a world where traditional key agreement and public-key encryption is impossible.<br><br>
+
+As a side result, we obtain a very simple proof of the classic result by Impagliazzo and Rudich (STOC 89) that separates key agreement from one-way functions. The proof is similar to a proof by Brakerski, Katz, Segev, and Yerukhimovich (TCC 2011), but more general because it applies to key agreement with non-perfect correctness. The proof also shows that Merkle puzzles are optimal, which Barak and Mahmoody (Crypto 2009) have shown before, but our proof is much simpler (and has tighter constants)."
+}
+
 @InProceedings{EPRINT:FieLan25,
   author =       "Rune Fiedler and
                   Roman Langrehr",

@@ -36,4 +36,4 @@ I am a Postdoc in the group of [Mohammad Hajiabadi](https://sites.google.com/vie
 
 ## Reserach interests
 
-I am interested in various cryptographic primitives, and I focus mostly on **non-interactive key exchange**, **(registered) functional encryption** and other **advanced encryption schemes**. I am interested in understanding the relation between different primitives via generic constructions, **black-box separations** and **metareductions**, but I am also interested in concrete constructions from algebraic assumptions, in particular from **(pairing) group** or **lattice** assumptions.
+I am interested in various cryptographic primitives, and I focus mostly on **non-interactive key exchange**, **identity-based cryptosystems**, **(registered) functional encryption** and other **advanced encryption schemes**. I am interested in understanding the relation between different primitives via generic constructions, **black-box separations** and **metareductions**, but I am also interested in concrete constructions from algebraic assumptions, in particular from **(pairing) group** or **lattice** assumptions.
