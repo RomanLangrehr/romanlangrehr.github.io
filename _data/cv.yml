@@ -74,8 +74,12 @@
 - title: Services To The Scientific Community
   type: nested_list
   contents:
+    - title: Committees
+      items:
+        - CiC editorial board (2026)
     - title: Conference Peer Reviews (subreviews)
       items:
+        - Eurocrypt 2026
         - TCC 2025
         - Asiacrypt 2025
         - Crypto 2025
