@@ -10067,7 +10067,14 @@ We show that this result has interesting implications for identity-based cryptog
   doi =          "10.62056/abe0zo-3y",
   eprint =       "2024/1857",
   abbr =         "CiC",
-  bibtex_show={true}
+  bibtex_show =	 {true},
+  abstract =     "We extend the concept of access control for functional encryption, introduced by Abdalla et al. (ASIACRYPT 2020), to function-revealing encryption (Joy and Passelègue, SCN 2018). Here “access control” means that function evaluation is only possible when a specified access policy is met. Specifically, we introduce access-controlled inner product function-revealing encryption (AC-IPFRE) and give two applications.<br><br>
+
+On the theoretical side, we use AC-IPFRE to show that function-hiding inner-product functional encryption (FH-IPFE), introduced by Bishop et al. (ASIACRYPT 2015), is equivalent to IPFRE. To show this, we in particular generically construct AC-IPFRE from IPFRE for the “non-zero inner-product” (NZIP) access policy. This result uses an effective version of Lagrange’s Four Square Theorem. One consequence of this result is that lower bounds by Ünal (EUROCRYPT 2020) suggest that, as for FH-IPFE, bilinear pairings will be needed to build IPFRE.<br><br>
+
+On the practical side, we build an outsourced approximate nearest-neighbor (ANN) search protocol and mitigate its leakage via AC-IPFRE. For this, we construct a practical AC-IPFRE scheme in the generic bilinear group model for a specific access policy for ANN search. To this end, we show that techniques of Wee (TCC 2020) implicitly give the most practical FH-IPFE scheme to date. We implement the resulting outsourced ANN search protocol and report on its performance.<br><br>
+
+Of independent interest, we show AC-IPFRE for NZIP implies attribute-hiding small-universe AC-IPFRE for arbitrary access policies. Previous work on access control for FE did not achieve attribute hiding. Overall, our results demonstrate that AC-IPFRE is of both theoretical and practical interest and set the stage for future work in the area."
 }
 
 @InProceedings{C:FieLan25,
