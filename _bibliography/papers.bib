@@ -10052,6 +10052,21 @@ In this work we show that constrained PRFs (for any constraint class) do not imp
 We show that this result has interesting implications for identity-based cryptography, where users obtain secret keys from a trusted, central authority. Namely, it shows that primitives that allow key agreement in this setting, like identity-based non-interactive key exchange and a weaker variant of identity-based encryption that we introduce in this work, do not imply key agreement and thus can exist even in a world where traditional key agreement and public-key encryption is impossible."
 }
 
+@Article{CiC:AFLO25,
+  author =       "Ojaswi Acharya and
+                  Weiqi Feng and
+                  Roman Langrehr and
+                  Adam O'Neill",
+  title =        "Access-Controlled Inner Product Function-Revealing Encryption",
+  pages =        7,
+  volume =       2,
+  publisher =    iacr_pub,
+  year =         2025,
+  journal =      cic,
+  number =       3,
+  doi =          "10.62056/abe0zo-3y",
+}
+
 @InProceedings{C:FieLan25,
   author =       "Rune Fiedler and
                   Roman Langrehr",
@@ -10164,27 +10179,6 @@ Technically, our malleable SNARK construction relies on recursive proofs, but wi
   abstract =     "We initiate the study of the black-box complexity of private-key functional encryption (FE). Of central importance in the private-key setting is the inner-product functionality, which is currently only known from assumptions that imply public-key encryption, such as Decisional Diffie-Hellman or Learning-with-Errors.  As our main result, we rule out black-box constructions of private-key inner-product FE from random oracles. This implies a black-box separation between private-key inner-product FE from all symmetric-key primitives implied by random oracles (e.g., symmetric-key encryption and collision-resistant hash functions).<br><br>
 
 Proving lower bounds for private-key functional encryption schemes introduces challenges that were absent in prior works. In particular, the combinatorial techniques developed by prior works for proving black-box lower bounds are only useful in the public-key setting and predicate encryption settings, which all fail for the private-key FE case. Our work develops novel combinatorial techniques based on Fourier analysis to overcome these barriers. We expect these techniques to be widely useful in future research in this area."
-}
-
-@Article{EPRINT:AFLO24,
-  author =       "Ojaswi Acharya and
-                  Weiqi Feng and
-                  Roman Langrehr and
-                  Adam O'Neill",
-  title =        "Access-Controlled Inner Product Function-Revealing Encryption",
-  month =        oct,
-  year =         2025,
-  journal =      "CiC (to appear)",
-  eprint =       "2024/1857",
-  abbr =         "CiC",
-  bibtex_show={true},
-  abstract =     "We extend the concept of access control for functional encryption, introduced by Abdalla et al. (ASIACRYPT 2020), to function-revealing encryption (Joy and Passelègue, SCN 2018). Here “access control” means that function evaluation is only possible when a specified access policy is met. Specifically, we introduce access-controlled inner product function-revealing encryption (AC-IPFRE) and give two applications.<br><br>
-
-On the theoretical side, we use AC-IPFRE to show that function-hiding inner-product functional encryption (FH-IPFE), introduced by Bishop et al. (ASIACRYPT 2015), is equivalent to IPFRE. To show this, we in particular generically construct AC-IPFRE from IPFRE for the “non-zero inner-product” (NZIP) access policy. This result uses an effective version of Lagrange’s Four Square Theorem. One consequence of this result is that lower bounds by Ünal (EUROCRYPT 2020) suggest that, as for FH-IPFE, bilinear pairings will be needed to build IPFRE.<br><br>
-
-On the practical side, we build an outsourced approximate nearest-neighbor (ANN) search protocol and mitigate its leakage via AC-IPFRE. For this, we construct a practical AC-IPFRE scheme in the generic bilinear group model for a specific access policy for ANN search. To this end, we show that techniques of Wee (TCC 2020) implicitly give the most practical FH-IPFE scheme to date. We implement the resulting outsourced ANN search protocol and report on its performance.<br><br>
-
-Of independent interest, we show AC-IPFRE for NZIP implies attribute-hiding small-universe AC-IPFRE for arbitrary access policies. Previous work on access control for FE did not achieve attribute hiding. Overall, our results demonstrate that AC-IPFRE is of both theoretical and practical interest and set the stage for future work in the area."
 }
 
 @InProceedings{PKC:HHLU24,
