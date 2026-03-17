@@ -76,9 +76,12 @@
   contents:
     - title: Committees
       items:
+        - PKC 2027 Program commitee
+        - ITC 2026 Program commitee
         - CiC editorial board (2026)
     - title: Conference Peer Reviews (subreviews)
       items:
+        - Crypto 2026 (2 papers)
         - Eurocrypt 2026
         - TCC 2025
         - Asiacrypt 2025
