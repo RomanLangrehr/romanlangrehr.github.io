@@ -2,6 +2,10 @@
   url: https://asiacrypt.iacr.org/2020/
   color: "#102a83"
 
+"Crypto 2026":
+  url: https://crypto.iacr.org/2026/
+  color: "#2ecaaf"
+  
 "Crypto 2025":
   url: https://crypto.iacr.org/2025/
   color: "#046577"
