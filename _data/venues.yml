@@ -34,6 +34,10 @@
   url: https://pkc.iacr.org/2019/
   color: "#7ecb67"
 
+"TCC 2026":
+  url: https://tcc.iacr.org/2026/
+  color: "#1c3b83"
+  
 "TCC 2024":
   url: https://tcc.iacr.org/2024/
   color: "#1e7536"
