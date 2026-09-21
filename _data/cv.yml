@@ -76,9 +76,10 @@
   contents:
     - title: Committees
       items:
-        - PKC 2027 program commitee
+        - PKC 2027 program commitee (10 reviews)
         - ITC 2026 program commitee (3 reviews)
-        - CiC editorial board 2026 (6+ reviews)
+        - CiC editorial board 2026 (9+ reviews)
+        - (the number of reviews is the number of non-delegated reviews)
     - title: Other Conference Peer Reviews (subreviews)
       items:
         - TCC 2026
@@ -97,6 +98,7 @@
         - ICALP Track A 2021
         - Crypto 2021
         - Asiacrypt 2019
+        - (unless indicated otherwise, I subreviewed one paper)
     - title: Other Journal Peer Reviews
       items:
         - DCC 2022
