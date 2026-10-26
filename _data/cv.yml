@@ -76,31 +76,11 @@
   contents:
     - title: Program committees
       items:
+        - Crypto 2027 program committee
         - PKC 2027 program commitee (10 reviews)
         - ITC 2026 program commitee (3 reviews)
         - CiC editorial board 2026 (9+ reviews)
-    - title: External reviews
-      items:
-        - TCC 2026
-        - Asiacrypt 2026 (2 papers)
-        - Crypto 2026 (2 papers)
-        - Eurocrypt 2026
-        - TCC 2025
-        - Asiacrypt 2025
-        - Crypto 2025
-        - PKC 2025
-        - Eurocrypt 2025 (2 papers)
-        - TCC 2024 (2 papers)
-        - Crypto 2024 (3 papers)
-        - PKC 2022
-        - Indocrypt 2022
-        - ICALP Track A 2021
-        - Crypto 2021
-        - Asiacrypt 2019
-    - title: Other Journal Peer Reviews
-      items:
-        - DCC 2022
-        - DCC 2021
+    - title: External reviews: Crypto (2021, 2024--2026), Eurocrypt (2025--2027), Asiacrypt (2019, 2025, 2026), PKC (2022, 2025), TCC (2024--2026), ICALP Track A (2021), DCC (2021, 2022). In total 25 reviews.
     - title: Other services
       items:
         - contributions to cryptobib
