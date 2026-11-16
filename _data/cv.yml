@@ -62,11 +62,13 @@
       year: 10/2015 – 09/2019
       description: Awarded 4 times continously for the duration of one year
 
-- title: Reserach interests
+- title: Research interests
   type: list
   contents:
+    - Lower bounds and black-box separations
     - Identity-based and functional encryption
     - Registration-based (functional) encryption
+    - Robust combiners
     - Non-interactive key exchange
     - Group- and pairing-based cryptography
     - Lattice-based cryptography
